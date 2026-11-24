@@ -43,8 +43,8 @@ pipeline {
             steps {
                 echo "==> [Jenkins Manual] Desplegando en la máquina Kali Linux..."
                 sh '''
-                    sudo mkdir -p ${DEPLOY_DIR}
-                    sudo cp app.py requirements.txt ${DEPLOY_DIR}/
+                    mkdir -p ${DEPLOY_DIR}
+                    cp app.py requirements.txt ${DEPLOY_DIR}/
                     echo "¡Despliegue manual desde Jenkins completado en ${DEPLOY_DIR}!"
                 '''
             }
